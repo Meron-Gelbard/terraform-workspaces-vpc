@@ -28,7 +28,7 @@ resource "aws_lb" "load_balancer" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.ALB-sg.id]
-  subnets            = [element(aws_subnet.public_sn.*.id, 0), element(aws_subnet.public_sn.*.id, 0)]
+  subnets            = [element(aws_subnet.public_sn.*.id, 0), element(aws_subnet.public_sn.*.id, 1)]
 
   enable_deletion_protection = false
 }
