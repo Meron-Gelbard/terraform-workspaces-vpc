@@ -1,5 +1,4 @@
 
-```markdown
 # AWS VPC IaC Deployment with Terraform Workspaces
 
 ## Overview
